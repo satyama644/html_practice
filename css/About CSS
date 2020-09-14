@@ -4,6 +4,13 @@
 - CSS is used to make website responsive
 - HTMLis used to structure a website
 - CSS takes responsibility of design
-- CSS Syntax SELECTOR{property:value}
+- CSS Syntax SELECTOR{property:value;}
 - Selector means where we have to change
-- eg:- p{color: blue}
+- eg:- p{color: blue;}
+- We can use group of slectors
+- eg- header,p.intro{ background-color:red; border-radius: 3px;}
+- Three ways to add CSS to the HTML document
+    - Inline CSS: CSS is added to the elements directly using style attribute
+    - Internal CSS: CSS is kept inside the head tags in <style> tags
+    - External CSS: CSS is kept separately inside a .css stylesheet
+    
