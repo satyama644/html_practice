@@ -1,0 +1,59 @@
+<!-- CSS Selectors are used to find the element whose property will be set-->
+<!-- Selectors are used to target the html elements -->
+<!-- Selectors makes it easy for us to easily target single/multiple HTML elements in the markup -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* This is Element Selector in CSS */
+        p{
+            color: red;
+        }
+        /* This is ID selector in CSS */
+        p.blueElement{
+            color: rgb(114, 170, 25);
+        }
+        /* Class Selector */
+        #third{
+            color: darkmagenta;
+            text-align: center;
+        }
+        .bgcolor{
+            background-color: yellow;
+        }
+
+        /* This is the universal Selector. The changes will be made to every tag but do not override the other selectors property */
+        *{
+            text-align: end;
+        }
+
+        /* Group Selectors */
+        h2,h5,p.group{
+            text-align: left;
+            color: darkturquoise;
+        }
+    </style>
+</head>
+<body>
+    <h2 >CSS Selectors</h2>
+    <!-- This is not affected as the class name is same for h4 and p but the styling is done only for p tag's class -->
+    <h4 class="blueElement"> This heading is not affected </h4>
+
+    <p> This is the first paragraph to demonstrate the CSS Selectors(Element Selector)</p>
+    <p class="blueElement bgcolor">This is another paragraph</p>
+    <div>
+        <p> This is a second paragraph inside the div tag to demonstrate the CSS Selectors(ID Selector)</p>
+    </div>
+    <p id="third">  This is a third paragraph to demonstrate the CSS Selector(class Selector) </p>
+
+    <h5>This is demonstrated using group selector</h5>
+    <p class="group"> Paragraph is demonstrated using group selector</p>
+</body>
+</html>
+
+
+<!-- Types of selector:- Element Selector(used to style all the specified elements), ID selector() -->
