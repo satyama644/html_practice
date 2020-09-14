@@ -1,0 +1,9 @@
+- CSS gives style to raw HTML
+- CSS stands for Cascading Style Sheets
+- CSS is used to give style to our web pages
+- CSS is used to make website responsive
+- HTMLis used to structure a website
+- CSS takes responsibility of design
+- CSS Syntax SELECTOR{property:value}
+- Selector means where we have to change
+- eg:- p{color: blue}
