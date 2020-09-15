@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Background</title>
+    <style>
+        #first_para{
+            background-color: plum;
+            height: 100px;
+            width: 500px;
+            border-width: 6px;
+            border-style: dashed;
+            border-color: indigo;
+            border-radius: 8px;
+        }
+        #second_para{
+            background-color: lawngreen;
+            border: 8px solid green;
+            /* border-radius: 10px; */
+            border-top: 7px solid blue;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        #third_para{
+            width: 500px;
+            text-align: center ;
+            height: 200px;
+            background-repeat: no-repeat; /* repeat-x and repeat-y will make it repeat on x and y axis respectively*/
+            background-position: 30px 50px; /* background-position: center center; background-position: center right; can be used first one is used for x axis and second one is used for y axis*/
+
+            border: 3px solid rgb(211, 195, 55);
+            background-image: url(https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h2>Heading 1</h2>
+    <p id="first_para"> This is the first paragraph</p>
+
+    <h2>Heading 2</h2>
+    <p id="second_para">This is Second paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab est recusandae, similique at soluta saepe molestias labore inventore praesentium velit ipsa ipsam quidem autem fugiat totam optio expedita dignissimos temporibus delectus debitis magnam enim maiores facilis vel. Repudiandae itaque debitis dolore praesentium, eius, dicta accusamus iure fuga aperiam eos in?</p>
+
+    <h2>Heading 3</h2>
+    <p id="third_para">This is the third paragraph</p>
+</body>
+</html>
