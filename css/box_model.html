@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
     <style>
+        *{
+            /* box-sizing property allows us to include the padding and border in an element's total width and height. */
+            box-sizing: border-box;
+
+            /* We cam set default values but we can override  */
+            padding: 0;
+            margin: 0;
+        }
         .container{
             background-color: rosybrown;
             border: 3px solid rgb(209, 75, 120);
@@ -12,12 +20,15 @@
             /* padding: top right bottom left; 
             Same for margin
             */
+
             padding: 30px 40px 20px 50px;
 
             /* padding: top/bottom left/right 
             eg:- padding: 30px 40px*/
 
             margin-bottom: 30px;
+
+            
         }
     </style>
 </head>
