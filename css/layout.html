@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout in CSS</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+             /* adjust the elements in its total width and total height */ 
+        }
+        .container{
+            width: 900px;
+            background: coral;
+            border: 3px dashed green;
+            margin: auto; /* automatically center the container from left and right*/
+        }
+        .item{
+            border: 3px solid rgb(60, 116, 236);
+            margin: 12px 10px;
+            padding: 12px 30px;
+            background-color: rgb(167, 123, 167);
+        }
+        #fruits{
+            float: left;
+            width: 43%;
+        }
+        #vegetables{
+            float: left;
+            width: 43%;
+        }
+        #spices{
+            /* float: left; */
+            /* The clear property specifies on which sides of an element floating elements are not allowed to float. */
+            clear: both;
+            width: 100%;
+        }
+        p,h2{
+            text-align: right;
+            text-align: left;
+            text-align: center;
+            /* The last you used the property will overlap the previous used property */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h2>Fruits</h2>
+            <ol>
+                <li>Pear</li>
+                <li>Orange</li>
+                <li>Apple</li>
+            </ol>
+            <p id="fruitsPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores nam mollitia nemo dolore fuga accusantium facere vitae nulla magni consequuntur, sit laboriosam voluptatem temporibus deserunt dicta? Iure, velit totam.
+            </p>
+        </div>
+        <div id="vegetables" class="item">
+            <h2>Vegetables</h2>
+            <ul>
+                <li>Potato</li>
+                <li>Tomato</li>
+                <li>Spinach</li>
+            </ul>
+            <p id="vegePara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores nam mollitia nemo dolore fuga accusantium facere vitae nulla magni consequuntur, sit laboriosam voluptatem temporibus deserunt dicta? Iure, velit totam.
+            </p>
+        </div>
+        <div id="spices" class="item">
+            <h2>Spices</h2>
+            <p id="spicesPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores nam mollitia nemo dolore fuga accusantium facere vitae nulla magni consequuntur, sit laboriosam voluptatem temporibus deserunt dicta? Iure, velit totam.
+            </p>
+        </div>
+    </div>
+</body>
+</html> 
